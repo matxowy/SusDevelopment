@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#042149">
+  <meta name="description" content="SusDevelopment — niezależne aplikacje mobilne tworzone z myślą o prostocie, użyteczności i dobrym doświadczeniu użytkownika.">
+  <title>SusDevelopment - aplikacje mobilne</title>
+  <link rel="icon" href="assets/logo_full.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./" aria-label="SusDevelopment - strona główna">
+        <img src="assets/logo_full.png" alt="" aria-hidden="true">
+        <span>SusDevelopment</span>
+      </a>
+      <nav class="nav-links" aria-label="Główna nawigacja">
+        <a href="#produkty">Produkty</a>
+        <a href="#o-mnie">O projekcie</a>
+        <a class="nav-contact" href="mailto:kontakt@susdevelopment.pl">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Tworzę aplikacje, które <span>ułatwiają codzienność.</span></h1>
+          <p class="hero-lead">SusDevelopment to miejsce, w którym powstają proste, dopracowane aplikacje mobilne - skupione na użyteczności, czytelnym interfejsie i konkretnym celu.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#produkty">Zobacz produkty</a>
+            <a class="btn btn-secondary" href="mailto:kontakt@susdevelopment.pl">kontakt@susdevelopment.pl</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-orb"></div>
+          <img class="hero-logo" src="assets/logo_icon.png" alt="">
+          <span class="hero-chip one">Mobile first</span>
+          <span class="hero-chip two">Prosto. Czytelnie. Użytecznie.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="produkty">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Produkty</div>
+            <h2>Aplikacje SusDevelopment</h2>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <a class="product-card" href="products/eyerest/">
+            <img class="product-mark" src="assets/eyerest-symbol.svg" alt="Logo EyeRest Reminder">
+            <h3>EyeRest Reminder</h3>
+            <p>Prosta aplikacja pomagająca pamiętać o regularnych przerwach dla oczu podczas pracy i korzystania z ekranu.</p>
+            <span class="open-label">Poznaj EyeRest →</span>
+            <img class="decor" src="assets/eyerest-symbol.svg" alt="" aria-hidden="true">
+          </a>
+
+          <div class="product-placeholder" aria-label="Miejsce na kolejne aplikacje">
+            <span>Rozwijane</span>
+            <h3>Kolejne aplikacje</h3>
+            <p>już niedługo!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="o-mnie">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">SusDevelopment</div>
+            <h2>Małe aplikacje. Konkretny cel.</h2>
+          </div>
+          <p>Skupiam się na tworzeniu lekkich narzędzi mobilnych, które rozwiązują jeden problem dobrze, zamiast komplikować proste rzeczy.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="info-card">
+            <div class="info-icon">01</div>
+            <h3>Prosty interfejs</h3>
+            <p>Najważniejsze funkcje są łatwe do znalezienia, a ekran nie konkuruje z użytkownikiem o uwagę.</p>
+          </article>
+          <article class="info-card">
+            <div class="info-icon">02</div>
+            <h3>Mobilne doświadczenie</h3>
+            <p>Produkty projektowane są z myślą o urządzeniach mobilnych - z czytelnym układem i wygodną obsługą.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <h2>Masz pytanie?</h2>
+            <p>Kontakt w sprawie aplikacji, wsparcia i współpracy.</p>
+          </div>
+          <a class="btn" href="mailto:kontakt@susdevelopment.pl">kontakt@susdevelopment.pl</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year">2026</span> SusDevelopment</span>
+      <div class="footer-links">
+        <a href="products/eyerest/">EyeRest</a>
+        <a href="mailto:kontakt@susdevelopment.pl">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs>
+    <linearGradient id="eyeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#52C7BE"/>
+      <stop offset="100%" stop-color="#2B9189"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A8D9C2"/>
+      <stop offset="100%" stop-color="#5BAF8B"/>
+    </linearGradient>
+    <linearGradient id="irisGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E6F73"/>
+      <stop offset="100%" stop-color="#0D3940"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(20,20) scale(0.34)">
+    <g fill="none" stroke="#A8D9C2" stroke-width="26" stroke-linecap="round">
+      <path d="M512 154 L512 90"/>
+      <path d="M387 178 L356 122"/>
+      <path d="M637 178 L668 122"/>
+      <path d="M286 250 L226 216"/>
+      <path d="M738 250 L798 216"/>
+    </g>
+    <path d="M245 382 C320 290 418 248 512 248 C606 248 704 290 779 382 C698 342 608 322 512 322 C416 322 326 342 245 382 Z" fill="url(#eyeGrad)"/>
+    <path d="M286 386 C348 327 428 300 512 300 C596 300 676 327 738 386 C676 445 596 472 512 472 C428 472 348 445 286 386 Z" fill="#EAF8F4"/>
+    <circle cx="512" cy="386" r="105" fill="url(#irisGrad)"/>
+    <circle cx="512" cy="386" r="48" fill="#0D3940"/>
+    <path d="M455 490 C340 495 249 560 208 673 C322 674 413 625 466 545 C470 525 466 507 455 490 Z" fill="url(#leafGrad)"/>
+    <path d="M235 646 C320 595 383 550 452 507" fill="none" stroke="#F4FBF7" stroke-width="15" stroke-linecap="round"/>
+    <path d="M569 500 C685 490 773 544 814 652 C706 664 614 622 560 548 C553 530 556 513 569 500 Z" fill="url(#leafGrad)"/>
+    <path d="M789 626 C707 587 646 548 573 516" fill="none" stroke="#F4FBF7" stroke-width="15" stroke-linecap="round"/>
+    <path d="M512 470 C510 565 510 655 512 760" fill="none" stroke="#4E9F82" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <text x="375" y="170" font-size="108" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#113D45">EyeRest</text>
+  <text x="377" y="262" font-size="72" font-family="Arial, Helvetica, sans-serif" font-weight="600" fill="#2D6E72">Reminder</text>
+</svg>
