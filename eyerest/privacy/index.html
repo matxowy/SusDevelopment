@@ -22,18 +22,186 @@
     <div class="breadcrumb"><a href="/">SusDevelopment</a> / <a href="/eyerest/">EyeRest Reminder</a> / <span data-en="Privacy policy" data-pl="Polityka prywatności">Privacy policy</span></div>
     <article class="legal-card">
       <h1 data-en="EyeRest Reminder Privacy Policy" data-pl="Polityka prywatności EyeRest Reminder">EyeRest Reminder Privacy Policy</h1>
-      <p data-en="The current policy is loaded from the official repository and displayed in its original language." data-pl="Aktualna polityka jest pobierana z oficjalnego repozytorium i wyświetlana w języku dokumentu źródłowego.">The current policy is loaded from the official repository and displayed in its original language.</p>
-      <p><a href="https://github.com/matxowy/EyeRestReminder/blob/master/PRIVACY.md" data-en="Read the source on GitHub" data-pl="Przeczytaj dokument źródłowy na GitHubie">Read the source on GitHub</a></p>
-      <div id="privacy-status" role="status">
-        <p id="privacy-loading" data-en="Loading the current privacy policy…" data-pl="Wczytywanie aktualnej polityki prywatności…">Loading the current privacy policy…</p>
-        <div id="privacy-error" hidden><p data-en="The policy could not be loaded. Please try again or use the source link above." data-pl="Nie udało się wczytać polityki. Spróbuj ponownie lub skorzystaj z powyższego linku do źródła.">The policy could not be loaded. Please try again or use the source link above.</p><button class="btn btn-secondary" id="privacy-retry" type="button" data-en="Try again" data-pl="Spróbuj ponownie">Try again</button></div>
+      <p><a href="/eyerest/privacy/PRIVACY.md" data-en="Read the original document (Markdown)" data-pl="Otwórz dokument źródłowy (Markdown)">Read the original document (Markdown)</a></p>
+      <div id="privacy-content" class="privacy-content" lang="en">
+<p>Last updated: 14 October 2026</p>
+<p>EyeRest Reminder (&quot;the app&quot;) is developed by SUS Development, which is the controller of the data
+described here. Questions, and any request about your data, go to <a href="mailto:contact@susdevelopment.pl">contact@susdevelopment.pl</a>.</p>
+<p>The short version: your settings stay on your device. The app reports its own crashes so it can be
+fixed, which you can switch off at any time, and it collects no usage statistics until you allow them.
+The timer works exactly the same whichever way both of those are set.</p>
+<h2>What the app sends, and on what basis</h2>
+<p><strong>Settings &gt; Privacy</strong> has two independent switches, and they do not rest on the same footing.</p>
+<p>Crash reports are on from the first launch. We rely on our legitimate interest in keeping the app
+working on the device you installed it on (Article 6(1)(f) GDPR), and the switch is how you object to
+that at any time, with no reason to give and no effect on the timer.</p>
+<p>Usage statistics are off until you allow them. Turning that switch on, or allowing it in the notice
+shown the first time you open Settings, is the consent we rely on to collect them (Article 6(1)(a)
+GDPR), and turning it off withdraws that consent.</p>
+<h3>Crash reports</h3>
+<p>Handled by <strong>Firebase Crashlytics</strong>. While switched on, the app sends:</p>
+<ul>
+<li>crashes, and failures that do not crash the app: a timer phase the system ended late, a phase change
+the speech engine could not announce, a run the system dropped, exact alarms being refused;</li>
+<li>the technical context a report is read against: the app version, the Android version, the device
+model and its manufacturer ROM, the phase the timer was in, and whether exact alarms, notifications
+and battery optimization were allowing the app to work.</li>
+</ul>
+<p>A report carries a Crashlytics installation identifier, which lets the reports from one installation be
+counted as one. Like the Analytics identifier below, it is pseudonymous data rather than anonymous
+data. A report carries no name, no email address, no contacts and nothing you type, and the app
+attaches no location to it.</p>
+<p>We weighed this against what it costs you before switching it on by default: the reports describe the
+app and the device rather than you, they are not used to build any profile, nothing in them is used
+for advertising, nothing is passed to a third party beyond the Google service that processes them for
+us, and one tap in the app stops it. The balancing test we recorded is in <code>LEGITIMATE_INTEREST.md</code> in
+the app&#39;s source repository, and we will send it to you on request.</p>
+<h3>Usage statistics</h3>
+<p>Handled by <strong>Google Analytics for Firebase</strong>. When switched on, the app sends which features are used:
+that a timer was started or stopped, that a phase ran to its end, and whether the scheduled reminder
+is on.</p>
+<p>Analytics also collects data of its own as soon as it is switched on, which we neither send nor
+control in detail:</p>
+<ul>
+<li>automatically collected events, such as the first launch, sessions, app updates and app removals,
+together with the technical data attached to them: the app version, the device model, the operating
+system version and the device language;</li>
+<li>an approximate location, which Analytics derives from the IP address of the connection. For traffic
+from the EU, Switzerland and the UK, Google states that the IP address is used for that lookup and
+then discarded rather than logged, and the location it leaves behind is coarse: country, region and
+city. We do not enable Google signals, advertising features or data sharing for advertising
+purposes, and the app tells Analytics not to allow ad personalization signals.</li>
+</ul>
+<p>These events are tied to an app instance identifier, a random identifier Analytics gives this
+installation. It does not identify you by name, but it is a pseudonymous identifier rather than
+anonymous data, which is why we ask before collecting it.</p>
+<h2>Switching it off again</h2>
+<p>Both switches can be turned off at any time, in the same place and with the same single tap it took to
+turn them on. From that moment:</p>
+<ul>
+<li>crash reporting stops, and any report still waiting on the device to be sent is discarded;</li>
+<li>usage statistics stop, and the Analytics identifier for this installation is deleted, so a later
+opt-in starts from a new one.</li>
+</ul>
+<p>Switching crash reports off is treated as a lasting objection: it stays off through updates, and we do
+not ask you about it again.</p>
+<p>The usage statistics consent is recorded together with the version of the explanation it was given
+under. If we ever change what those statistics collect, that switch goes back to off and we ask again
+under the new explanation rather than carrying the old consent over.</p>
+<p>Earlier versions of the app asked for a consent to crash reporting as well. An &quot;off&quot; stored by one of
+those versions is honoured as an objection, but an &quot;off&quot; that only meant you had not yet opted in is
+not: after updating, crash reporting is on unless you switched it off yourself. Usage statistics are
+off until you allow them under the current explanation.</p>
+<h2>Who processes the data</h2>
+<p>Both services are provided by Google, which processes the data on our behalf as our processor, under
+the Google Cloud / Firebase data processing terms and Google&#39;s
+<a href="https://policies.google.com/privacy">privacy policy</a>. The processing may take place outside the
+European Economic Area, which Google covers with the European Commission&#39;s standard contractual
+clauses.</p>
+<p>We do not sell the data and do not pass it on to anyone other than these two Google services. As the
+app stands today it carries no advertising, no ad network and no tracking across other apps or sites,
+nothing we collect is used for advertising or profiling, and the advertising ID is not collected
+either: the app explicitly removes the permissions that would allow it, and tells Analytics not to
+allow ad personalization signals.</p>
+<p>That is a description of the app as it is now rather than a promise about every future version. If the
+app ever gains advertising, we will update this policy with a new &quot;last updated&quot; date before the
+version that does it ships, and we will ask you for whatever that needs as a separate, clearly
+labelled choice rather than reading it into anything you have already agreed to. What was collected
+under this policy will not be fed into advertising afterwards.</p>
+<p>Google is our processor for the data described here, but Google also processes some data as a
+controller in its own right, as service data under its own terms, to operate, secure and maintain the
+services. That processing is governed by the
+<a href="https://firebase.google.com/terms">Firebase terms</a>, the
+<a href="https://www.google.com/analytics/terms/">Google Analytics terms</a> and Google&#39;s privacy policy, not by
+this one.</p>
+<h2>How long it is kept</h2>
+<ul>
+<li>Crash reports: Google states that Crashlytics keeps crash stack traces, extracted minidump data and
+the associated identifiers for 90 days, counted from when they are received, before it starts
+removing them from its live and backup systems.</li>
+<li>Usage statistics: the event level data is kept for 2 months, the shortest retention Analytics offers,
+after which it is deleted automatically. Aggregated reports Google builds from it are not covered by
+that setting.</li>
+</ul>
+<h2>Data the app stores on your device</h2>
+<p>The app saves your own settings locally so they survive a restart:</p>
+<ul>
+<li>selected theme and interface language</li>
+<li>announcement volume and vibration preferences</li>
+<li>scheduled reminder days and time</li>
+<li>your two reporting choices and the version of the explanation the statistics consent was given under</li>
+<li>the state of a running timer (current phase and when it ends)</li>
+</ul>
+<p>This data never leaves your device. It is removed when you uninstall the app or clear its storage.</p>
+<p>Android&#39;s own backup service may include your settings in your Google account backup, under Google&#39;s
+privacy policy rather than ours. The running timer state is explicitly excluded from backup.</p>
+<h2>Permissions and why they are needed</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
+<td>Keep the timer running and its countdown visible while you use other apps</td>
+</tr>
+<tr>
+<td><code>SCHEDULE_EXACT_ALARM</code></td>
+<td>End each work and rest phase at the exact moment it is due</td>
+</tr>
+<tr>
+<td><code>POST_NOTIFICATIONS</code></td>
+<td>Show the countdown and the phase change notifications</td>
+</tr>
+<tr>
+<td><code>VIBRATE</code></td>
+<td>Signal a phase change when vibration is enabled</td>
+</tr>
+<tr>
+<td><code>RECEIVE_BOOT_COMPLETED</code></td>
+<td>Restore your scheduled reminder after a device restart</td>
+</tr>
+<tr>
+<td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td>
+<td>Send the crash reports, and the usage statistics once you allow them</td>
+</tr>
+<tr>
+<td><code>WAKE_LOCK</code></td>
+<td>Required by the reporting libraries to finish sending a report</td>
+</tr>
+</tbody></table>
+<h2>Text to speech</h2>
+<p>Phase announcements are spoken through the text to speech engine installed on your device. That
+engine is a separate application with its own privacy policy. The app only passes it the word to
+speak (&quot;Work&quot; or &quot;Rest&quot;).</p>
+<h2>Children</h2>
+<p>The app is not directed at children. No usage statistics are collected from anyone until they are
+allowed, and the crash reports describe the app and the device rather than the person using it.</p>
+<h2>Your rights</h2>
+<p>Under the GDPR you can ask us for access to the data held about your installation, for its erasure or
+rectification, for a restriction of the processing, and for the data to be handed over in a portable
+form.</p>
+<p>Because the crash reporting rests on our legitimate interest, Article 21 GDPR entitles you to object to
+it. The switch under Settings &gt; Privacy is that objection: it takes effect immediately, needs no reason
+and does not require you to write to us. You can withdraw the usage statistics consent in the same
+place, which does not affect what was lawfully processed before.</p>
+<p>You can also complain to your supervisory authority, which in Poland is the President of the Personal
+Data Protection Office (Prezes UODO).</p>
+<p>Write to <a href="mailto:contact@susdevelopment.pl">contact@susdevelopment.pl</a> to exercise any of these. The reports carry an installation
+identifier rather than anything identifying you, so a request is easiest to act on if it is sent from
+the device concerned and close to the time of the report.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be published at this address with a new &quot;last
+updated&quot; date. If the change concerns what the usage statistics collect, the app asks for that consent
+again under the new explanation.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:contact@susdevelopment.pl">contact@susdevelopment.pl</a></p>
       </div>
-      <noscript><p>JavaScript is required to load the current policy. Please use the GitHub source link above. / Włącz JavaScript lub otwórz dokument na GitHubie.</p></noscript>
-      <div id="privacy-content" class="privacy-content"></div>
     </article>
   </div></main>
   <footer class="site-footer"><div class="container footer-row"><span>© SusDevelopment</span><div class="footer-links"><a href="/eyerest/">EyeRest Reminder</a><a href="/" data-en="Home" data-pl="Strona główna">Home</a></div></div></footer>
   <script src="/language.js"></script>
-  <script src="/privacy.js"></script>
 </body>
 </html>

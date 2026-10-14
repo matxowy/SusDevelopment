@@ -380,7 +380,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .language-switch button[aria-pressed="true"] { background: var(--brand-strong); color: white; }
 .language-switch button:focus-visible, #privacy-retry:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; }
 .privacy-content { overflow-wrap: anywhere; }
-.privacy-content p { white-space: pre-line; }
+.privacy-content table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: .9rem; }
+.privacy-content th, .privacy-content td { padding: 10px; border: 1px solid var(--line); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.privacy-content th { background: var(--surface-soft); }
 .privacy-content pre { overflow-x: auto; padding: 16px; background: var(--surface-soft); border-radius: 12px; }
 [hidden] { display: none !important; }
 @media (max-width: 680px) {
