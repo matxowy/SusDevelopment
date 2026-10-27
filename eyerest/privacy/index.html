@@ -22,8 +22,8 @@
     <div class="breadcrumb"><a href="/">SusDevelopment</a> / <a href="/eyerest/">EyeRest Reminder</a> / <span data-en="Privacy policy" data-pl="Polityka prywatności">Privacy policy</span></div>
     <article class="legal-card">
       <h1 data-en="EyeRest Reminder Privacy Policy" data-pl="Polityka prywatności EyeRest Reminder">EyeRest Reminder Privacy Policy</h1>
-      <p><a href="/eyerest/privacy/PRIVACY.md" data-en="Read the original document (Markdown)" data-pl="Otwórz dokument źródłowy (Markdown)">Read the original document (Markdown)</a></p>
-      <div id="privacy-content" class="privacy-content" lang="en">
+      <p><a href="/eyerest/privacy/PRIVACY.md" data-en="Read the original document (Markdown)" data-pl="Otwórz angielski dokument źródłowy (Markdown)">Read the original document (Markdown)</a></p>
+      <div id="privacy-content" class="privacy-content" lang="en" data-language-content="en">
 <p>Last updated: 14 October 2026</p>
 <p>EyeRest Reminder (&quot;the app&quot;) is developed by SUS Development, which is the controller of the data
 described here. Questions, and any request about your data, go to <a href="mailto:contact@susdevelopment.pl">contact@susdevelopment.pl</a>.</p>
@@ -198,6 +198,86 @@ updated&quot; date. If the change concerns what the usage statistics collect, th
 again under the new explanation.</p>
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:contact@susdevelopment.pl">contact@susdevelopment.pl</a></p>
+      </div>
+      <div class="privacy-content" lang="pl" data-language-content="pl" hidden>
+<p>Ostatnia aktualizacja: 14 października 2026 r.</p>
+<p>EyeRest Reminder („aplikacja”) jest rozwijana przez SUS Development, administratora opisanych tutaj danych. Pytania i prośby dotyczące danych kieruj na <a href="mailto:contact@susdevelopment.pl">contact@susdevelopment.pl</a>.</p>
+<p>W skrócie: Twoje ustawienia pozostają na urządzeniu. Aplikacja zgłasza własne awarie, aby można było je naprawić. Możesz to wyłączyć w dowolnym momencie. Statystyki użytkowania są zbierane dopiero po wyrażeniu zgody. Minutnik działa tak samo niezależnie od obu tych ustawień.</p>
+<h2>Jakie dane wysyła aplikacja i na jakiej podstawie</h2>
+<p>W sekcji <strong>Ustawienia &gt; Prywatność</strong> znajdują się dwa niezależne przełączniki, które odpowiadają różnym podstawom przetwarzania danych.</p>
+<p>Raporty o awariach są włączone od pierwszego uruchomienia. Opieramy się na naszym prawnie uzasadnionym interesie, którym jest zapewnienie prawidłowego działania aplikacji na urządzeniu, na którym ją zainstalowano (art. 6 ust. 1 lit. f RODO). Przełącznik pozwala w dowolnym momencie wnieść sprzeciw, bez podawania powodu i bez wpływu na minutnik.</p>
+<p>Statystyki użytkowania są wyłączone do czasu wyrażenia zgody. Włączenie przełącznika lub udzielenie zgody w komunikacie przy pierwszym otwarciu Ustawień stanowi zgodę na ich zbieranie (art. 6 ust. 1 lit. a RODO). Wyłączenie przełącznika oznacza wycofanie zgody.</p>
+<h3>Raporty o awariach</h3>
+<p>Obsługuje je <strong>Firebase Crashlytics</strong>. Gdy raportowanie jest włączone, aplikacja wysyła:</p>
+<ul>
+<li>informacje o awariach i błędach, które nie powodują zamknięcia aplikacji: fazie minutnika zakończonej przez system z opóźnieniem, zmianie fazy, której syntezator mowy nie zdołał ogłosić, działaniu minutnika przerwanym przez system oraz odmowie ustawienia dokładnych alarmów;</li>
+<li>kontekst techniczny potrzebny do odczytania raportu: wersję aplikacji i Androida, model urządzenia i oprogramowanie systemowe producenta (ROM), bieżącą fazę minutnika oraz informację, czy dokładne alarmy, powiadomienia i optymalizacja baterii pozwalały aplikacji działać.</li>
+</ul>
+<p>Raport zawiera identyfikator instalacji Crashlytics, który pozwala rozpoznać raporty z tej samej instalacji. Podobnie jak opisany poniżej identyfikator Analytics, są to dane pseudonimowe, a nie anonimowe. Raport nie zawiera imienia i nazwiska, adresu e-mail, kontaktów ani wpisywanych treści. Aplikacja nie dołącza do niego lokalizacji.</p>
+<p>Przed domyślnym włączeniem raportowania rozważyliśmy jego wpływ na użytkownika: raporty opisują aplikację i urządzenie, nie służą tworzeniu profili ani reklamom, a dane nie trafiają do podmiotów trzecich poza usługą Google, która przetwarza je dla nas. Jedno dotknięcie w aplikacji wyłącza raportowanie. Udokumentowany test równowagi znajduje się w pliku <code>LEGITIMATE_INTEREST.md</code> w repozytorium kodu źródłowego aplikacji. Możemy go przesłać na prośbę.</p>
+<h3>Statystyki użytkowania</h3>
+<p>Obsługuje je <strong>Google Analytics for Firebase</strong>. Po ich włączeniu aplikacja wysyła informacje o używanych funkcjach: uruchomieniu lub zatrzymaniu minutnika, zakończeniu fazy oraz o tym, czy zaplanowane przypomnienie jest włączone.</p>
+<p>Po włączeniu Analytics zbiera również własne dane, których nie wysyłamy samodzielnie i nad których szczegółowym zakresem nie mamy kontroli:</p>
+<ul>
+<li>automatycznie zbierane zdarzenia, takie jak pierwsze uruchomienie, sesje, aktualizacje i odinstalowanie aplikacji, wraz z danymi technicznymi: wersją aplikacji, modelem urządzenia, wersją systemu operacyjnego i językiem urządzenia;</li>
+<li>przybliżoną lokalizację ustalaną na podstawie adresu IP połączenia. Google podaje, że w przypadku ruchu z UE, Szwajcarii i Wielkiej Brytanii adres IP służy do ustalenia lokalizacji, po czym jest odrzucany, a nie zapisywany. Zachowana lokalizacja jest ogólna: kraj, region i miasto. Nie włączamy Google signals, funkcji reklamowych ani udostępniania danych do celów reklamowych. Aplikacja przekazuje Analytics ustawienie blokujące sygnały personalizacji reklam.</li>
+</ul>
+<p>Zdarzenia są powiązane z identyfikatorem instancji aplikacji, czyli losowym identyfikatorem nadanym tej instalacji przez Analytics. Nie identyfikuje Cię on z imienia i nazwiska, ale jest identyfikatorem pseudonimowym, a nie danymi anonimowymi. Dlatego pytamy o zgodę przed rozpoczęciem zbierania danych.</p>
+<h2>Ponowne wyłączenie</h2>
+<p>Oba przełączniki można wyłączyć w dowolnym momencie, w tym samym miejscu i jednym dotknięciem, tak samo jak przy włączaniu. Od tej chwili:</p>
+<ul>
+<li>raportowanie awarii zostaje zatrzymane, a raporty oczekujące na wysłanie na urządzeniu są odrzucane;</li>
+<li>zbieranie statystyk użytkowania zostaje zatrzymane, a identyfikator Analytics tej instalacji jest usuwany. Ponowne wyrażenie zgody oznacza rozpoczęcie z nowym identyfikatorem.</li>
+</ul>
+<p>Wyłączenie raportów o awariach traktujemy jako trwały sprzeciw: ustawienie pozostaje wyłączone po aktualizacjach i nie pytamy o nie ponownie.</p>
+<p>Zgodę na statystyki użytkowania zapisujemy razem z wersją wyjaśnienia, na podstawie którego została udzielona. Jeśli zmienimy zakres zbieranych statystyk, przełącznik wróci do pozycji wyłączonej i ponownie poprosimy o zgodę na podstawie nowego wyjaśnienia.</p>
+<p>Wcześniejsze wersje aplikacji prosiły o zgodę także na raportowanie awarii. Wyłączenie zapisane w takiej wersji jest respektowane jako sprzeciw. Nie dotyczy to jednak stanu wyłączonego, który oznaczał jedynie brak dotychczasowej zgody: po aktualizacji raportowanie awarii jest włączone, chyba że zostało przez Ciebie wyłączone. Statystyki użytkowania pozostają wyłączone do czasu wyrażenia zgody na podstawie aktualnego wyjaśnienia.</p>
+<h2>Kto przetwarza dane</h2>
+<p>Obie usługi dostarcza Google, które przetwarza dane w naszym imieniu jako podmiot przetwarzający, zgodnie z warunkami przetwarzania danych Google Cloud / Firebase oraz <a href="https://policies.google.com/privacy">polityką prywatności Google</a>. Przetwarzanie może odbywać się poza Europejskim Obszarem Gospodarczym. Google stosuje w tym zakresie standardowe klauzule umowne Komisji Europejskiej.</p>
+<p>Nie sprzedajemy danych i nie przekazujemy ich nikomu poza tymi dwiema usługami Google. Obecnie aplikacja nie zawiera reklam ani sieci reklamowych i nie śledzi użytkownika w innych aplikacjach ani witrynach. Żadne zbierane dane nie służą reklamom ani profilowaniu. Identyfikator reklamowy również nie jest zbierany: aplikacja jawnie usuwa uprawnienia, które by na to pozwalały, i przekazuje Analytics ustawienie blokujące sygnały personalizacji reklam.</p>
+<p>Jest to opis obecnej aplikacji, a nie obietnica dotycząca każdej przyszłej wersji. Jeśli w aplikacji pojawią się reklamy, zaktualizujemy tę politykę i datę ostatniej aktualizacji przed wydaniem takiej wersji. Poprosimy o wszystko, co będzie w związku z tym wymagane, w formie osobnego, jasno opisanego wyboru. Nie będziemy wywodzić tego z wcześniejszych zgód. Dane zebrane na podstawie tej polityki nie zostaną później wykorzystane do reklam.</p>
+<p>Google jest podmiotem przetwarzającym opisane tutaj dane, ale część danych przetwarza również jako niezależny administrator, na własnych warunkach, w celu obsługi, zabezpieczania i utrzymania usług. To przetwarzanie podlega <a href="https://firebase.google.com/terms">warunkom Firebase</a>, <a href="https://www.google.com/analytics/terms/">warunkom Google Analytics</a> i polityce prywatności Google, a nie niniejszej polityce.</p>
+<h2>Jak długo dane są przechowywane</h2>
+<ul>
+<li>Raporty o awariach: Google podaje, że Crashlytics przechowuje ślady stosu awarii, dane wyodrębnione z minizrzutów pamięci oraz powiązane identyfikatory przez 90 dni od ich otrzymania. Następnie rozpoczyna usuwanie ich z systemów produkcyjnych i kopii zapasowych.</li>
+<li>Statystyki użytkowania: dane na poziomie zdarzeń są przechowywane przez 2 miesiące, czyli najkrótszy okres dostępny w Analytics, a następnie automatycznie usuwane. To ustawienie nie obejmuje raportów zbiorczych tworzonych przez Google na ich podstawie.</li>
+</ul>
+<h2>Dane przechowywane przez aplikację na urządzeniu</h2>
+<p>Aplikacja zapisuje ustawienia lokalnie, aby zachować je po ponownym uruchomieniu:</p>
+<ul>
+<li>wybrany motyw i język interfejsu</li>
+<li>głośność komunikatów i ustawienia wibracji</li>
+<li>dni i godzinę zaplanowanego przypomnienia</li>
+<li>oba wybory dotyczące raportowania oraz wersję wyjaśnienia, na podstawie którego udzielono zgody na statystyki</li>
+<li>stan działającego minutnika (bieżącą fazę i czas jej zakończenia)</li>
+</ul>
+<p>Te dane nigdy nie opuszczają urządzenia. Są usuwane po odinstalowaniu aplikacji lub wyczyszczeniu jej danych.</p>
+<p>Usługa kopii zapasowych Androida może uwzględniać ustawienia w kopii zapasowej na koncie Google, zgodnie z polityką prywatności Google, a nie naszą. Stan działającego minutnika jest jawnie wyłączony z kopii zapasowej.</p>
+<h2>Uprawnienia i ich przeznaczenie</h2>
+<table>
+<thead><tr><th>Uprawnienie</th><th>Cel</th></tr></thead>
+<tbody>
+<tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>Utrzymanie działania minutnika i widocznego odliczania podczas korzystania z innych aplikacji</td></tr>
+<tr><td><code>SCHEDULE_EXACT_ALARM</code></td><td>Zakończenie każdej fazy pracy i odpoczynku dokładnie w wyznaczonym momencie</td></tr>
+<tr><td><code>POST_NOTIFICATIONS</code></td><td>Wyświetlanie odliczania i powiadomień o zmianie fazy</td></tr>
+<tr><td><code>VIBRATE</code></td><td>Sygnalizowanie zmiany fazy, gdy wibracje są włączone</td></tr>
+<tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Przywrócenie zaplanowanego przypomnienia po ponownym uruchomieniu urządzenia</td></tr>
+<tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Wysyłanie raportów o awariach oraz statystyk użytkowania po wyrażeniu zgody</td></tr>
+<tr><td><code>WAKE_LOCK</code></td><td>Umożliwienie bibliotekom raportowania dokończenia wysyłania raportu</td></tr>
+</tbody></table>
+<h2>Synteza mowy</h2>
+<p>Komunikaty o fazach są odczytywane przez silnik syntezy mowy zainstalowany na urządzeniu. Jest to osobna aplikacja z własną polityką prywatności. EyeRest Reminder przekazuje jej wyłącznie słowo do wypowiedzenia („Work” lub „Rest”, czyli „Praca” lub „Odpoczynek”).</p>
+<h2>Dzieci</h2>
+<p>Aplikacja nie jest skierowana do dzieci. Statystyki użytkowania nie są zbierane od nikogo bez zgody, a raporty o awariach opisują aplikację i urządzenie, a nie korzystającą z nich osobę.</p>
+<h2>Twoje prawa</h2>
+<p>Na podstawie RODO możesz poprosić nas o dostęp do danych dotyczących Twojej instalacji, ich usunięcie lub sprostowanie, ograniczenie przetwarzania oraz przekazanie danych w formie umożliwiającej ich przeniesienie.</p>
+<p>Ponieważ raportowanie awarii opiera się na naszym prawnie uzasadnionym interesie, art. 21 RODO daje Ci prawo do wniesienia sprzeciwu. Wyłączenie przełącznika w sekcji Ustawienia &gt; Prywatność stanowi taki sprzeciw: działa natychmiast, nie wymaga uzasadnienia ani kontaktu z nami. W tym samym miejscu możesz wycofać zgodę na statystyki użytkowania. Nie wpływa to na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem.</p>
+<p>Możesz także złożyć skargę do organu nadzorczego. W Polsce jest nim Prezes Urzędu Ochrony Danych Osobowych (Prezes UODO).</p>
+<p>Aby skorzystać z tych praw, napisz na <a href="mailto:contact@susdevelopment.pl">contact@susdevelopment.pl</a>. Raporty zawierają identyfikator instalacji, a nie dane bezpośrednio Cię identyfikujące. Dlatego najłatwiej rozpatrzyć prośbę wysłaną z danego urządzenia w czasie zbliżonym do wysłania raportu.</p>
+<h2>Zmiany</h2>
+<p>Jeśli ta polityka się zmieni, opublikujemy jej zaktualizowaną wersję pod tym adresem z nową datą ostatniej aktualizacji. Jeśli zmiana dotyczy zakresu zbieranych statystyk użytkowania, aplikacja ponownie poprosi o zgodę na podstawie nowego wyjaśnienia.</p>
+<h2>Kontakt</h2>
+<p>Pytania dotyczące tej polityki: <a href="mailto:contact@susdevelopment.pl">contact@susdevelopment.pl</a></p>
       </div>
     </article>
   </div></main>

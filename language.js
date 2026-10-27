@@ -1,6 +1,9 @@
 (() => {
   function setLanguage(language) {
     document.documentElement.lang = language;
+    document.querySelectorAll('[data-language-content]').forEach(element => {
+      element.hidden = element.dataset.languageContent !== language;
+    });
     document.querySelectorAll('[data-en]').forEach(element => {
       element.textContent = element.dataset[language];
     });
